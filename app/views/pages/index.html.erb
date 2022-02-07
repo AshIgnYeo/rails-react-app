@@ -1,1 +1,4 @@
-<h1>Hello world</h1>
+<h1>View all profiles</h1>
+<% @profiles.each do |profile| %>
+  <h2><%= profile.name %></h2>
+<% end %>

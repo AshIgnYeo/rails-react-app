@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "removing profiles..."
+Profile.destroy_all
+puts "removed profiles!"
+
+puts "creating new profiles..."
+ashley = Profile.new(
+  name: "Ashley",
+  gender: "male"
+)
+
+ashley.save!
+
